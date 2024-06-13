@@ -1,0 +1,221 @@
+.project{
+    height: auto;
+}
+.project .container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 10px;
+    grid-gap: 5px;
+}
+.project-container{
+    display: grid;
+    grid-template-areas: "pbanner pbanner ptitle"
+    "pbanner pbanner psubs"
+    "pbanner pbanner pps"
+    "pbanner pbanner subtitle"
+    "pbanner pbanner plang"
+    "pbanner pbanner pbutton";
+    grid-gap: 10px;
+    margin: 0px;
+    height: 100%;
+    padding: 5px;
+}
+
+.project-banner{
+    grid-area: pbanner;
+    border-radius: 5px;
+    background-color: var(--assets-color-blue-100);
+    object-fit: cover;
+    width: 100%;
+    max-width: 350px;
+    height: 100%;
+    max-height: 280px;
+}
+.project-title{
+    grid-area: ptitle;
+    font-size: 1.5rem;
+    font-weight: 700;
+    width: 100%;
+}
+.project-date{
+    grid-area: psubs;
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--assets-color-white);
+    background-color: var(--assets-color-red);
+    width: fit-content;
+    width: -moz-fit-content;
+    height: fit-content;
+    height: -moz-fit-content;
+    border-radius: 10px;
+    padding: 5px 12px;
+}
+.project-para{
+    grid-area: pps;
+    font-weight: 500;
+    font-size: 1rem;
+    margin-left: 10px;
+    width: 100%;
+    height: 50px;
+    overflow: auto;
+}
+.project-use{
+    grid-area: subtitle;
+    font-size: 1rem;
+    font-weight: 600;
+    margin-left: 10px;
+}
+.project-lang-list{
+    grid-area: plang;
+    list-style: none;
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--assets-color-white);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    margin-left: 10px;
+    width: 100%;
+}
+.project-lang{
+    background-color: var(--assets-color-red);
+    width: fit-content;
+    width: -moz-fit-content;
+    height: fit-content;
+    height: -moz-fit-content;
+    border-radius: 10px;
+    padding: 5px 12px;
+}
+.project-button-container{
+    grid-area: pbutton;
+    margin: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    list-style: none;
+    width: 100%;
+}
+.project-links{
+    text-decoration: none;
+    color: var(--assets-color-white);
+    background-color: var(--assets-color-red);
+    font-size: 1rem;
+    font-weight: 500;
+    width: fit-content;
+    width: -moz-fit-content;
+    height: fit-content;
+    height: -moz-fit-content;
+    border-radius: 10px;
+    padding: 9px 10px;
+    cursor: pointer;
+    transition: ease-in-out 500ms;
+}
+.project-links.disable{
+    cursor: default;
+    background-color: var(--assets-color-black-100);
+    pointer-events: none;
+}
+
+.project-links:hover{
+    background-color: var(--assets-color-black-100);
+    color: var(--assets-color-white);
+}
+
+.see-content{
+    width: 100%;
+    font-weight: 500;
+    background-color: transparent;
+    border: none;
+    font-family: "Work Sans", sans-serif;
+    font-size: 1rem;
+    cursor: pointer;
+    color: var(--assets-color-black-100);
+    margin-bottom: 14px;
+}
+.see-content:hover{
+    color: var(--assets-color-blue-100);
+    transition: ease-in-out 500ms;
+}
+
+@media only screen and (max-width: 1200px) {
+    .project .container{
+        grid-template-columns: repeat(1, 1fr);
+        padding: 10px 5px;
+        grid-gap: 5px;
+    }
+    .project-container{
+        grid-template-areas: "pbanner ptitle ptitle"
+        "pbanner psubs psubs"
+        "pbanner pps pps"
+        "pbanner subtitle subtitle"
+        "pbanner plang plang"
+        "pbanner pbutton pbutton";
+    }
+    .proj .dummy-banner{
+        height: 210px;
+    }
+    .proj .dummy-title{
+        height: 26px;
+    }
+    .proj .dummy-sub{
+        height: 20px;
+    }
+    .proj .dummy-p{
+        height: 76px;
+    }
+    .proj .dummy-long{
+        height: 40px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .project-title{
+        font-size: 1.25rem;
+    }
+    .project-date, .project-lang, .project-links{
+        font-size: .8125rem;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    .project-container{
+        grid-template-areas: "pbanner pbanner"
+        "pbanner pbanner "
+        "pbanner pbanner"
+        "ptitle psubs"
+        "subtitle subtitle"
+        "plang plang"
+        "pbutton pbutton";
+        align-items: baseline;
+    }
+    .project-banner{
+        height: 200px;
+        max-width: 100%;
+    }
+    .project-date{
+        background-color: transparent;
+        color: var(--assets-color-black-100);
+        padding: 0px;
+        font-size: .8125rem;
+        text-align: right;
+        width: 100%;
+        margin-left: 0px;
+    }
+    .project-para{
+        display: none;
+    }
+    .project-lang-list, .project-use{
+        margin-left: 0px;
+    }
+    .project-button-container{
+        margin: 10px 0px;
+    }
+}
+
+@media only screen and (max-width: 1280px) and (max-height: 800px) {
+    .project .container{
+        grid-template-columns: repeat(1, 1fr);
+        padding: 10px 5px;
+        grid-gap: 5px;
+    }
+}

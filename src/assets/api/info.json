@@ -1,0 +1,93 @@
+{
+    "info" : {
+        "role" : [ "Front-End Developer", "Graphic Illustrator", "Developer"] ,
+        "greeting" : "<p>A person with the experience of Full-Stack Development, Web Development and 2D Graphic Illustrator Freelancing, who eager to learn new things to enhance and develop new skills in Web Development and able to share my knowledge in the industry.</p>"
+    },
+    "social_links" : 
+    [
+        { 
+            "id" : 1,
+            "social" : "github",
+            "link" : "https://github.com/MagtuloyRML"
+        },
+        {
+            "id" : 2,
+            "social" : "linked",
+            "link" : "https://www.linkedin.com/in/rmlmgtly/"
+        },
+        {
+            "id" : 3,
+            "social" : "behance",
+            "link" : "https://www.behance.net/rmlmgtly"
+        },
+        {
+            "id" : 4,
+            "social" : "instagram",
+            "link" : "https://www.instagram.com/drw.w.rml/"
+        },
+        {
+            "id" : 5,
+            "social" : "twitter",
+            "link" : "https://twitter.com/Drw_w_Rml"
+        }
+    ],
+    "about-me" : {
+        "about-text" : "<p>I’m Ermil Magtuloy, working as a Freelance Graphic Illustrator, previously working as a Full Stack Developer and aspiring Front-End Developer based in Philippines.<br/><br/>I really love to draw something tickle in my mind specially fan arts and I really like to adapt it in making website. As they said “Without heartfelt dedication to one's work, art cannot exist”.</p>",
+        "experience" : [
+            {
+                "id" : "1",
+                "name" : "TSUKIDEN ELECTRONIC PHIL. INC.",
+                "date" : "November 2022 - April 2024",
+                "description" : "<p>Full Stack Software Developer specialize in maintaining and developing in-house Windows and Web-based Application for Productions and Traceability Monitoring application in the produced products called <b>RTdbX (Real Time Data Base Expanded).</b></p>",
+                "experienced-tools" : ["C#", "SQL (Crud Operation and Database Administration)", "Web Development (HTML, CSS, jQuery, C#)"]
+            },
+            {
+                "id" : "2",
+                "name" : "Freelance 2D Graphic Illustrator",
+                "date" : "August 2020 - Present",
+                "description" : "<p>Illustrating client requested art piece with certain detailed with using digital art application</p>",
+                "experienced-tools" : ["Clip Studio Paint", "Adobe Illustrator", "Krita", "Ibis Paint X" , "Medibang" , "Photoshop"]
+            }
+        ],
+        "education" : {
+            "id" : "1",
+            "name" : "Bachelor of Science Information Technology",
+            "date" : "2018 - 2022",
+            "description" : "<p>Graduated in Polytechnic University of the Philippines Biñan Campus</p>",
+            "gwa" : "1.57"
+        }
+    },
+    "projects" : [
+        {
+            "id" : "1",
+            "title" : "Simple Calculator",
+            "date" : "May 15, 2024",
+            "description" : "<p></p>",
+            "language" : ["HTML", "CSS", "Javascript", "React.js"],
+            "code" : "https://github.com/MagtuloyRML/simple-calculator",
+            "demo" : "https://magtuloyrml.github.io/simple-calculator/",
+            "banner" : ""
+        }
+    ], 
+    "gallery" : [
+        {
+            "id" : "1",
+            "banner" : "",
+            "title" : "NICO ROBIN",
+            "date" : "May 12th 2024",
+            "links" : {
+                "behance" : "https://www.behance.net/gallery/198376907/NICO-ROBIN",
+                "instagram" : "https://www.instagram.com/p/C60vSKkRcOo/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+                "twitter" : "https://twitter.com/Drw_w_Rml/status/1789144895753794038/photo/1"
+            }
+        }
+    ],
+    "certificate" : [
+
+    ],
+    "contacts" : {
+        "phone" : "09XX-XXX-XX52", 
+        "p-email" : "emagtuloy.comm@gmail.com",
+        "art-email" : "rml.comm09@gmail.com"
+    }
+}

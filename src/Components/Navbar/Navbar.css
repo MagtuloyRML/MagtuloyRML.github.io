@@ -1,0 +1,233 @@
+.navbar{
+    background: url(../../assets/img/doodle-light-tp-bg.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: 0px -280px;
+    background-color: var(--assets-color-white);
+
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+
+    position: fixed;
+    top: 0;
+    width: 100%;
+    
+    padding: 7px 10%;
+    letter-spacing: -1px;
+    z-index: 10;
+
+    transition: ease-in-out 500ms;
+
+    -webkit-box-shadow: 0px -19px 71px 0px rgba(77,80,93,.5);
+    -moz-box-shadow: 0px -19px 71px 0px rgba(77,80,93,.5);
+    box-shadow: 0px -19px 71px 0px rgba(77,80,93,.5);
+}
+.side-logo-sect{
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+}
+.side-logo{
+    height: 45px;
+}
+.side-logo-text{
+    font-weight: 700;
+    font-size: 16px;
+    margin: 5px;
+    cursor: default;
+}
+.side-logo-text span{
+    margin: 2px;
+}
+.side-logo-text span:nth-of-type(1){
+    color: var(--assets-color-black-100);
+}
+.side-logo-text span:nth-of-type(2){
+    color: var(--assets-color-red);
+}
+.nav-menu{
+    display: flex;
+    justify-content:space-around;
+    align-content: center;
+    list-style: none;
+    transition: ease-in-out 500ms;
+}
+
+.nav-menu .a{
+    text-decoration: none;
+    color: var(--assets-color-black-100);
+    font-weight: 600;
+    font-size: 16px;
+    padding-bottom: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    transition: ease-in-out .5s;
+}
+
+.nav-menu .a:hover, .nav-menu .a:active{
+    color: var(--assets-color-red);
+    border-bottom: 2px solid var(--assets-color-red);
+}
+
+.nav-footer{
+    display: none;
+    flex-direction: column;
+    text-align: left;color: var(--assets-color-black-100);
+    font-size: 11px;
+    padding-top: 31px;
+    font-weight: 500;
+}
+.nav-footer-underline{
+    width: 100%;
+    height: 1px;
+    background-color: var(--assets-color-black-100);
+    border-radius: 1px;
+}
+
+.navbar .right-bttn{
+    display: none;
+}
+
+.right-bttn{
+    flex-direction: column;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    width: 26px;
+    height: 26px;
+}
+
+.right-bttn .x-form{
+    background-color: var(--assets-color-black-100);
+    width: 24px;
+    height: 3px;
+    border-radius: 2px;
+    margin: 2px;
+    transition: ease-in-out 500ms;
+    -webkit-animation: back1 1s ease-in-out 1ms forwards;
+    animation: back1 1s ease-in-out 1ms forwards;
+}
+.right-bttn:hover, .right-bttn:active{
+    border: none;
+}
+
+.right-bttn:hover .x-form{
+    background-color: var(--assets-color-red);
+}
+
+.x{
+    display: block;
+}
+
+.x .x-form{
+    position: absolute;
+    transition: ease-in-out 500ms;
+    top: 20px;
+    right: 3px;
+}
+
+.x .x-form:nth-of-type(1){
+    -webkit-animation: turnX1 1s ease-in-out 1ms forwards;
+    animation: turnX1 1s ease-in-out 1ms forwards;
+}
+
+.x .x-form:nth-of-type(2){
+    -webkit-animation: turnX2 1s ease-in-out 1ms forwards;
+    animation: turnX2 1s ease-in-out 1ms forwards;
+}
+
+.x .x-form:last-child{
+    display: none;
+} 
+
+@keyframes turnX1 {
+    100%{
+        transform: rotate(45deg);
+    }
+}
+
+@keyframes turnX2 {
+    100%{
+        transform: rotate(-45deg);
+    }
+}
+
+@keyframes back1 {
+    100%{
+        transform: rotate(0deg);
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .navbar{
+        padding: 0 5%;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .navbar{
+        justify-content: space-between;
+        flex-wrap: wrap;
+        background-position: 0px;
+        padding: 7px;
+    }
+
+    .side-logo-text{
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .navbar{
+        padding: 7px;
+    }
+    .nav-menu{
+        display: none;
+    }
+    .show{
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column;
+        text-align: left;
+        order: 3;
+        width: 100%;
+        padding-top: 31px;
+        transition: ease-in 5ms;
+        height: 100vh;
+    }
+    .nav-footer{
+        display: flex;
+    }
+    .menu-bttn{
+        padding: 13.5px 0px;
+    }
+    .menu-bttn .a{
+        padding: 5px;
+    }
+
+    .navbar .right-bttn{
+        display: flex;
+        order: 2;
+    }
+}
+
+@media only screen and (max-height: 810px) {
+    .side-logo{
+        height: 35px;
+    }
+    .right-bttn span{
+        width: 20px;
+        height: 2px;
+        border-radius: 1.25px;
+        margin: 1px;
+    }
+    .nav-menu .a{
+        font-size: 12px;
+        padding-top: 15px;
+    }
+    .nav-footer{
+        font-size: 11px;
+    }
+}
