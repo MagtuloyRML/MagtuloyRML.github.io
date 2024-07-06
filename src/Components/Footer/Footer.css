@@ -1,0 +1,223 @@
+.footer{
+    background-image: url('../../assets/img/doodle-dark-4.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: 0px ;
+    background-color: var(--assets-color-black-200);
+    width: 100%;
+
+    padding: 7px 10%;
+    letter-spacing: -1px;
+    
+    display: grid;
+    justify-items: center;
+    align-content: center;
+    grid-template-areas: "logo logo logo logo logo logo"
+    "dp dp men men sc sc"
+    "end end end end end end" ;
+    transition: ease-in-out 500ms;
+}
+
+.footer-logo-container{
+    grid-area: logo;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    transition: ease-in-out 500ms;
+}
+
+.logo-image{
+    width: 180px;
+    transition: ease-in-out 500ms;
+}
+
+.footer-profile{
+    grid-area: dp;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: ease-in-out 500ms;
+}
+.footer-pic{
+    width: 165px;
+    border-radius: 50%;
+    transition: ease-in-out 500ms;
+}
+.footer-text-container{
+    color: var(--assets-color-white);
+    padding: 9px;
+    transition: ease-in-out 500ms;
+}
+.name{
+    font-weight: 900;
+    font-size: 2rem;
+    transition: ease-in-out 500ms;
+}
+.role{
+    font-weight: 600;
+    font-size: 1.5rem;
+    height: 1.5rem;
+    transition: ease-in-out 500ms;
+}
+.footer-menu{
+    grid-area: men;
+    width: 100%;
+    transition: ease-in-out 500ms;
+}
+.footer-menu .menu-list{
+    width: 100%;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    transition: ease-in-out 500ms;
+}
+.footer-menu .menu-list .menu-item{
+    padding: 13.5px;
+}
+
+.footer-menu .menu-list .menu-item .footer-bttn{
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 16px;
+    color: var(--assets-color-white);
+}
+.footer-menu .menu-list .menu-item .footer-bttn:hover{
+    color: var(--assets-color-red);
+    border-bottom: 2px solid var(--assets-color-red);
+}
+
+.footer-social{
+    grid-area: sc;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    color: var(--assets-color-white);
+    transition: ease-in-out 500ms;
+}
+.footer-social .title{
+    font-weight: 600;
+    font-size: 1rem;
+    text-align: right;
+}
+
+.footer-button-container{
+    margin-top: 10px;
+    display: flex;
+    justify-content: flex-end;
+}
+.footer-button-container .button-link{
+    text-decoration: none;
+    font-size: 1rem;
+    background-color: var(--assets-color-red);
+    color: var(--assets-color-white);
+    padding: 10px 10px 6px;
+    border-radius: 10px;
+    margin: 10px;
+    cursor: pointer;
+    transition: ease-in-out 500ms;
+}
+.footer-button-container .button-link:nth-of-type(5){
+    margin-right: 0px;
+}
+
+.footer-button-container .button-link:hover{
+    background-color: var(--assets-color-white);
+    color: var(--assets-color-black-200);
+}
+.footer-copy{
+    grid-area: end;
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--assets-color-white);
+}
+.footer-line{
+    width: 100%;
+    height: 1px;
+    background-color: var(--assets-color-white);
+    border-radius: 1px;
+}
+.footer-copy-text{
+    padding-top: 20px;
+    font-size: .8rem;
+}
+
+.footer-text-scroll{
+    position: sticky;
+    color: var(--assets-color-white);
+    font-weight: 900;
+    width: 100%;
+    top: 0;
+}
+
+@media only screen and (max-width: 1200px) {
+    .footer{
+        grid-template-areas: "logo logo logo logo "
+        "dp dp dp dp"
+        "men men sc sc"
+        "end end end end" ;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .logo-image{
+        width: 140px;
+    }
+    .footer-pic{
+        width: 145px;
+    }
+    .footer{
+        padding: 7px 5%;
+    }
+    .footer-profile{
+        margin-bottom: 20px;
+    }
+    .name{
+        font-weight: 900;
+        font-size: 1.5rem;
+    }
+    .role{
+        font-weight: 600;
+        font-size: 1rem;
+        height: 1rem;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .logo-image{
+        width: 90px;
+    }
+    .footer-pic{
+        width: 120px;
+    }
+    .footer{
+        padding: 7px;
+        grid-template-areas: "logo logo"
+        "dp dp"
+        "men men"
+        "sc sc"
+        "end end" ;
+    }
+    .footer-profile{
+        flex-direction: column;
+        text-align: center;
+    }
+    .footer-social{
+        margin-top: 30px;
+        justify-content: center;
+    }
+    .footer-social .title{
+        text-align: center;
+    }
+    .footer-button-container{
+        justify-content: center;
+    }
+    
+}
